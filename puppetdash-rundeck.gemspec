@@ -1,18 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'puppetdash/rundeck/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "puppetdash-rundeck"
-  spec.version       = Puppetdash::Rundeck::VERSION
-  spec.authors       = ["weezheel"]
-  spec.email         = ["skylostft@laposte.net"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.version       = "1.0.0"
+  spec.authors       = ["skylost"]
+  spec.email         = ["skylost@users.noreply.github.com"]
+  spec.summary       = %q{Integrates Puppet Dashboard with Rundeck.}
+  spec.description   = %q{ Provides a resource endpoint for Rundeck from a Puppet Dashboard.}
+  spec.homepage      = "https://github.com/skylost/puppetdash-rundeck"
   spec.license       = "MIT"
-
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})

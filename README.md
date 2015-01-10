@@ -1,31 +1,31 @@
-# Puppetdash::Rundeck
+= puppetdash-rundeck
 
-TODO: Write a gem description
+Integrates [Puppet Dashboard](https://docs.puppetlabs.com/dashboard/) with [Rundeck](http://rundeck.org/).
+
+
+## Requires
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
+  cd /var/www
+  git clone https://github.com/skylost/puppetdash-rundeck.git
+  cd puppetdash-rundeck
+  chmod +x bootstrap
+  sudo ./bootstrap
 
-```ruby
-gem 'puppetdash-rundeck'
-```
+or
 
-And then execute:
+  bunble install
+  thin start
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install puppetdash-rundeck
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the puppetdash-rundeck
 
-## Contributing
+A list of nodes Puppet Dashboard
 
-1. Fork it ( https://github.com/[my-github-username]/puppetdash-rundeck/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+  $ curl localhost:3000
+
+You get a list of nodes Puppet Dashboard in XML format
